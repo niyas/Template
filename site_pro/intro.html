@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Intro page</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Your description">
+  <meta name="keywords" content="Your keywords">
+  <meta name="author" content="Your name">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/grid.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  
+  <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/Lucida_Bright_400.font.js"></script>
+  <script type="text/javascript" src="js/cufon-replace.js"></script>
+  <script type="text/javascript" src="js/flashobject.js"></script>
+  
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="intro-box">
+  	<div class="inside">
+    	<h2>Intro page</h2>
+      <div id="flash-intro">
+         <div class="aligncenter"><a href="http://www.adobe.com/go/EN_US-H-GET-FLASH"><img src="http://www.adobe.com/images/shared/download_buttons/get_adobe_flash_player.png" alt="" /></a></div>
+      </div>
+      <script type="text/javascript">
+        var fo = new FlashObject("flash/video_AS3.swf?fileVideo=intro06.flv", "flash-intro", "512", "288", "8", "");
+        fo.addParam("quality", "high");
+        fo.addParam("allowFullScreen", "true");
+        fo.write("flash-intro");
+      </script>
+      <div class="wrapper">
+      	<a href="typography.html" class="button3 fright"><span>skip intro</span></a>
+      </div>
+      
+    </div>
+  </div>
+  <!-- trigger -->
+  <div id="advanced">
+  	<span class="trigger"></span>
+  	<ul>
+      <li class="trigger_adv"><span>Pages</span>
+        <ul>
+          <li><a href="under_construction.html">Under construction</a></li>
+          <li><a href="intro.html">intro page</a></li>
+          <li><a href="404.html">404 page</a></li>
+        </ul>
+      </li>
+      <li><a href="layouts.html">Layouts</a>
+      <li><a href="typography.html">Typography</a></li>	
+      <li class="trigger_adv"><span>Interactive</span>
+        <ul>
+          <li><a href="coin-slider.html">slider</a>
+            <ul>
+              <li><a href="coin-slider.html">coin slider</a></li>
+              <li><a href="kwicks.html">kwicks slider</a></li>
+            </ul>
+          </li>
+          <li><a href="functional-slider.html">functional slider</a></li>
+          <li><a href="gallery-page1.html">simple gallery</a></li>
+          <li><a href="gallery-page2.html">advanced gallery</a></li>
+          <li><a href="misc.html" class="current">misc</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- panel begin -->
+  <script type="text/javascript">
+		$(function(){
+			$("#advanced .trigger").toggle(function(){
+				$(this).parent().animate({right:0}, "medium")
+			}, function(){
+				$(this).parent().animate({right:-172}, "medium")
+			});
+		});
+  </script>
+  <!-- panel end -->
+  <script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Miscellanous</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Your description">
+  <meta name="keywords" content="Your keywords">
+  <meta name="author" content="Your name">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/grid.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  
+  <!-- styles for highlight.js -->
+  <link rel="stylesheet" href="css/idea.css" type="text/css" media="all">
+  <!-- styles for prettyPhoto -->
+  <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all">
+  
+  <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+   
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/Lucida_Bright_400.font.js"></script>
+  <script type="text/javascript" src="js/cufon-replace.js"></script>
+  
+  
+  
+  <script src="js/highlight.js"></script>
+  <script src="js/html-xml.js"></script>
+  <script src="js/css.js"></script>
+  <script src="js/javascript.js"></script>
+  
+  <script>
+    hljs.tabReplace = '    ';
+    hljs.initHighlightingOnLoad();
+  </script>
+
+	<!--[if lt IE 7]>
+  	<link rel="stylesheet" href="css/ie/ie7.css" type="text/css" media="screen">
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div class="extra">
+		<header>
+			<div class="container_24">
+				<div class="wrapper">
+					<article class="grid_18">
+						<div class="logo">
+							<a href="index.html">Progress.co</a>
+						</div>
+					</article>
+					<article class="grid_6">
+						<form action="" id="search-form">
+							<fieldset>
+								<label><input type="text" value="search" onFocus="if(this.value=='search'){this.value=''}" onBlur="if(this.value==''){this.value='search'}" /></label><input type="image" src="images/search-input-img.gif" alt="" />
+							</fieldset>
+						</form>
+					</article>
+				</div>
+				<div class="extra-wrap">
+					<div class="grid_24">
+						<nav>
+							<ul class="sf-menu typography-menu">
+								<li class="first"><a href="index.html">Home</a></li>
+								<li><a href="404.html">Pages</a>
+									<ul>
+										<li class="bg"></li>
+										<li><a href="under_construction.html">under construction</a></li>
+										<li><a href="intro.html">intro page</a></li>
+										<li><a href="404.html">404 page</a></li>
+										<li class="bg1"><strong><strong></strong></strong></li>
+									</ul>
+								</li>
+								<li><a href="layouts.html">Layouts</a></li>
+								<li><a href="typography.html">Typography</a></li>	
+								<li><a href="misc.html" class="current">Interactive</a>
+									<ul>
+										<li class="bg"></li>
+										<li><a href="coin-slider.html">slider</a>
+											<ul>
+												<li><a href="coin-slider.html">coin slider</a></li>
+												<li><a href="kwicks.html">kwicks slider</a></li>
+											</ul>
+										</li>
+										<li><a href="functional-slider.html">functional slider</a></li>
+										<li><a href="gallery-page1.html">simple gallery</a></li>
+										<li><a href="gallery-page2.html">advanced gallery</a></li>
+										<li><a href="misc.html" class="current">misc</a></li>
+										<li class="bg1"><strong><strong></strong></strong></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</header>
+		<section id="content">
+			<div class="container_24">
+				<div class="wrapper">
+					<div class="grid_24 pading">
+						<h1>Miscellanous</h1>
+						<h2>Tooltips</h2>
+						<a href="#" class="normaltip" title="Hello, I am aToolTip">Normal Tooltip</a> - This is a normal tooltip with default settings.
+						<div class="wrapper">
+							<div class="tabs">
+								<ul class="nav">
+								  <li class="selected"><a href="#normaltip-code">Code</a></li>
+								  <li><a href="#normaltip-overview">How it works</a></li>
+								</ul>
+								<div id="normaltip-code" class="tab-content" style="width:590px">
+								  <div class="inner">
+									<pre><code>&lt;a href="#" class="normaltip" title="Hello, I am aToolTip"&gt;Normal Tooltip&lt;/a&gt;</code></pre>
+								  </div>
+								</div>
+								<div id="normaltip-overview" class="tab-content">
+								  <div class="inner">
+									In order to activate the tooltip you need to add <strong>class="normaltip"</strong> class and insert the necessary text to the <strong>title</strong> attribute.
+								  </div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="fixedtip" title="Hello, I am aToolTip">Fixed Tooltip</a> - This is a fixed tooltip that doesnt follow the mouse.
+						<div class="wrapper">
+							<div class="tabs">
+								<ul class="nav">
+								  <li class="selected"><a href="#fixedtip-code">Code</a></li>
+								  <li><a href="#fixedtip-overview">How it works</a></li>
+								</ul>
+								<div id="fixedtip-code" class="tab-content" style="width:590px">
+								  <div class="inner">
+									<pre><code>&lt;a href="#" class="fixedtip" title="Hello, I am aToolTip  &lt;img src='images/small_pic5.jpg' alt='' title='Nice Horsy'  /&gt;"&gt;Fixed Tooltip&lt;/a&gt;</code></pre>
+								  </div>
+								</div>
+								<div id="fixedtip-overview" class="tab-content">
+								  <div class="inner">
+									In order to activate the tooltip with fixed position you need to add <strong>class="fixedtip"</strong> class and insert the necessary text to the <strong>title</strong> attribute.
+								  </div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="clicktip" >On Click Tooltip</a> - This is a click activated tooltip with content passed in from 'tipContent' param
+						<div class="wrapper">
+							<div class="tabs">
+								<ul class="nav">
+								  <li class="selected"><a href="#clicktip-code">Code</a></li>
+								  <li><a href="#clicktip-overview">How it works</a></li>
+								</ul>
+								<div id="clicktip-code" class="tab-content" style="width:590px;">
+								  <div class="inner">
+									<pre><code>&lt;a href="#" class="clicktip" &gt;On Click Tooltip&lt;/a&gt;</code></pre>
+								  </div>
+								</div>
+								<div id="clicktip-overview" class="tab-content" style="width:590px;">
+								  <div class="inner">In order to activate the tooltip with fixed position you need to add <strong>class="clicktip"</strong> class and insert the necessary text to the <strong>title</strong> attribute. Then you will need to add the following script to the <strong>head</strong> section:
+								  <pre><code>$('.clicktip').aToolTip({  
+					clickIt: true,  
+					tipContent: 'Hello I am aToolTip with content from param'  
+				});  
+				</code></pre>
+								  where the value of <strong>tipContent</strong> parameter defines the tooltip text.
+								  </div>
+								</div>
+							</div>
+						</div>
+						<span class="hr"><a href="#">top</a></span>
+						<h1>SlideDown elements</h1>
+						  <h2>Normal slideDown</h2>
+						  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices arcu quis turpis pretium et porttitor magna sollicitudin. Cras venenatis quam et tellus tristique bibendum eget ut lacus. Morbi tristique risus non augue viverra a adipiscing felis interdum. In eget elit massa.</p>
+						  <!-- slide down begin -->
+						  <p></p>
+						  <dl class="slideDown">
+							<dt>SlideDown trigger</dt>
+							<dd>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices arcu quis turpis pretium et porttitor magna sollicitudin. Cras venenatis quam et tellus tristique bibendum eget ut lacus. Morbi tristique risus non augue viverra a adipiscing felis interdum. In eget elit massa.
+								<p></p>
+								<div class="wrapper">
+									<figure><img src="images/tfile_gall_1_21.jpg" alt=""></figure>
+									Mauris dapibus rhoncus lectus, id viverra risus imperdiet vitae. In consequat luctus quam, sit amet hendrerit mauris commodo sit amet. Suspendisse fermentum lorem quis turpis semper faucibus. Nullam ornare libero ac felis interdum non adipiscing nisi facilisis.
+								</div>
+							</dd>
+						  </dl>
+						  <!-- slide down end-->
+						  <div class="wrapper">
+							<div class="tabs">
+							  <ul class="nav">
+								<li class="selected"><a href="#slideDown-code">Code</a></li>
+								<li><a href="#slideDown-overview">How it works</a></li>
+							  </ul>
+							  <div id="slideDown-code" class="tab-content" style="width:590px;">
+								<div class="inner">
+		<pre><code>&lt;dl class="slideDown"&gt;
+		&lt;dt&gt;SlideDown trigger&lt;/dt&gt;
+		&lt;dd&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit...&lt;/p&gt;
+		&lt;/dd&gt;
+		&lt;/dl&gt;
+		</code></pre>
+								</div>
+							  </div>
+							  <div id="slideDown-overview" class="tab-content">
+								<div class="inner">
+								  Here you will simply need to add <strong>slideDown</strong> class to any <strong>dl</strong>-list (<strong>&lt;dl class="slideDown"&gt;</strong>).
+								</div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="hr"><a href="#">top</a></span>
+						  <h2>Absolute position slideDown</h2>
+						  <!-- slide down begin --><p></p>
+						  <dl class="slideDown absolute">
+							<dt>SlideDown trigger (absolute position desc)</dt>
+							<dd>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices arcu quis turpis pretium et porttitor magna sollicitudin. Cras venenatis quam et tellus tristique bibendum eget ut lacus.</p>
+								Mauris dapibus rhoncus lectus, id viverra risus imperdiet vitae. In consequat luctus quam, sit amet hendrerit mauris commodo sit amet. Suspendisse fermentum lorem quis turpis semper faucibus. Nullam ornare libero ac felis interdum non adipiscing nisi facilisis.<p></p>
+								<div class="wrapper">
+									<figure><img src="images/tfile_gall_1_22.jpg" alt=""></figure>
+									Mauris dapibus rhoncus lectus, id viverra risus imperdiet vitae. In consequat luctus quam, sit amet hendrerit mauris commodo sit amet. Suspendisse fermentum lorem quis turpis semper faucibus. Nullam ornare libero ac felis interdum non adipiscing nisi facilisis.
+								</div>
+							</dd>
+						  </dl>
+						  <!-- slide down end-->
+						  <div class="inside">
+							<p>Ut vel dolor sapien. Phasellus mauris risus, euismod sed pretium consequat, aliquet in nisl. Nulla ut ligula id odio sagittis tincidunt. Nam sit amet massa est. Praesent sollicitudin sollicitudin turpis, vel dignissim metus tincidunt sed. Vestibulum mattis, purus quis molestie feugiat, est elit gravida mi, ut vehicula tortor lectus eu erat. Mauris neque nisi, eleifend eu tincidunt nec, sollicitudin vel turpis. Vestibulum mattis, purus quis molestie feugiat, est elit gravida mi, ut vehicula tortor lectus eu erat.</p><p>Ut vel dolor sapien. Phasellus mauris risus, euismod sed pretium consequat, aliquet in nisl. Nulla ut ligula id odio sagittis tincidunt. Nam sit amet massa est. Praesent sollicitudin sollicitudin turpis, vel dignissim metus tincidunt sed. Vestibulum mattis, purus quis molestie feugiat, est elit gravida mi, ut vehicula tortor lectus eu erat. Mauris neque nisi, eleifend eu tincidunt nec, sollicitudin vel turpis. Vestibulum mattis, purus quis molestie feugiat, est elit gravida mi, ut vehicula tortor lectus eu erat.</p>
+							Donec felis dolor, tincidunt dignissim pellentesque aliquet, vestibulum non tellus. Donec quis lectus id leo imperdiet gravida. Suspendisse ac risus at est consequat pulvinar. Pellentesque dolor massa, volutpat tempor tempus gravida, adipiscing at augue. Fusce id tellus dui, nec pretium urna. Vivamus ac turpis neque. Vestibulum sed enim augue, eget cursus justo. Praesent nec erat eget elit feugiat interdum non ac purus. Ut nisl mauris, mollis sagittis cursus sed, rhoncus sit amet ipsum. Duis vel nisl orci. Maecenas in tortor sit amet mauris condimentum hendrerit mattis at arcu. Suspendisse potenti.
+						  </div>
+						  <div class="wrapper">
+							<div class="tabs">
+							  <ul class="nav">
+								<li class="selected"><a href="#slideDown-absolute-code">Code</a></li>
+								<li><a href="#slideDown-absolute-overview">How it works</a></li>
+							  </ul>
+							  <div id="slideDown-absolute-code" class="tab-content" style="width:590px;">
+								<div class="inner">
+		<pre><code>&lt;dl class="slideDown absolute"&gt;
+		&lt;dt&gt;SlideDown trigger&lt;/dt&gt;
+		&lt;dd&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit...&lt;/p&gt;
+		&lt;/dd&gt;
+		&lt;/dl&gt;
+		</code></pre>
+								</div>
+							  </div>
+							  <div id="slideDown-absolute-overview" class="tab-content">
+								<div class="inner">
+								  Here you will simply need to add <strong>slideDown</strong> and <strong>absolute</strong> classes to any <strong>dl</strong>-list (<strong>&lt;dl class="slideDown"&gt;</strong>).
+								</div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="hr"><a href="#">top</a></span>
+						  <h2>Twitter</h2>
+						  <div id="twitter" class="twitter"></div>
+						  <div class="wrapper">
+							<div class="tabs">
+							  <ul class="nav">
+								<li class="selected"><a href="#twitter-code">Code</a></li>
+								<li><a href="#twitter-overview">How it works</a></li>
+							  </ul>
+							  <div id="twitter-code" class="tab-content" style="width:590px;">
+								<div class="inner">
+								  <pre><code>&lt;div id="twitter" class="twitter"&gt; &lt;/div&gt;</code></pre>
+								</div>
+							  </div>
+							  <div id="twitter-overview" class="tab-content">
+								<div class="inner">
+								  <p>You can add Twitter-widget and configure it quite easily:</p>
+								  <ol>
+									<li>Insert a <strong>div</strong> with <strong>twitter</strong> class and <strong>twitter</strong> id to a desired location on the page:<br />
+									  <strong>&lt;div id="twitter" class="twitter"&gt; &lt;/div&gt;</strong></li>
+									<li>Next you need to configure twitter-widget to use your twitter-account. In order to do this you should change the user name in the initiasization script:<br />
+									  <strong>userName: "lorem_ipsum_dol</strong>"</li>
+									<li>Then choose the number of tweets to display:<br />
+									  numTweets: <strong>5</strong> </li>
+								  </ol>
+								</div>
+							 </div>
+							</div>
+						</div>
+						<span class="hr"><a href="#">top</a></span>
+						<h2>Tabs</h2>
+						<div class="wrapper">
+						<!-- tabs begin -->
+						<div class="tabs">
+						  <ul class="nav">
+							<li class="selected"><a href="#tab1">popular</a></li>
+							<li><a href="#tab2">featured</a></li>
+							<li><a href="#tab3">comments</a></li>
+						  </ul>
+						  <div id="tab1" class="tab-content">
+							<div class="inner">
+							  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> Praesent scelerisque mollis nisi sit amet blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+							</div>
+						  </div>
+						  <div id="tab2" class="tab-content">
+							<div class="inner">
+							  <p>Phasellus non mi vel turpis gravida rhoncus eget lacinia tellus.</p>
+							  <p>Nulla aliquet ornare nulla, id accumsan nunc aliquet quis. Aliquam commodo urna eu enim tempus id consequat felis volutpat.</p>
+							  Proin non venenatis metus. Donec felis ante, venenatis et pellentesque vitae, pulvinar interdum nisi.
+							</div>
+						  </div>
+						  <div id="tab3" class="tab-content">
+							<div class="inner">
+							  <p>Aliquam commodo urna eu enim tempus id consequat felis volutpat. Proin gravida nunc suscipit felis aliquet molestie.</p>
+							  <p>Cras placerat lectus eu eros vestibulum in ullamcorper nisl egestas. Nam facilisis dictum pulvinar. </p>
+							  Suspendisse luctus nisi eget lectus facilisis eget rhoncus elit lacinia. Duis non enim nisl. Nulla tempor sodales augue sollicitudin lacinia. 
+							</div>
+						  </div>
+						</div>
+						<!-- tabs end -->
+					  </div>
+					  <div class="wrapper">
+						<div class="tabs">
+						  <ul class="nav">
+							<li class="selected"><a href="#tabs-code">Code</a></li>
+							<li><a href="#tabs-overview">How it works</a></li>
+						  </ul>
+						  <div id="tabs-code" class="tab-content" style="width:590px">
+							<div class="inner">
+		<pre><code>&lt;div class="tabs"&gt;
+		&lt;ul class="nav"&gt;
+		&lt;li class="selected"&gt;&lt;a href="#tab1"&gt;text1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#tab2"&gt;text2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#tab3"&gt;text3&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;div id="tab1" class="tab-content"&gt;
+		&lt;div class="inner"&gt;
+		&lt!-- insert content here --&gt;
+		&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id="tab2" class="tab-content"&gt;
+		&lt;div class="inner"&gt;
+		&lt!-- insert content here --&gt;
+		&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id="tab3" class="tab-content"&gt;
+		&lt;div class="inner"&gt;
+		&lt!-- insert content here --&gt;
+		&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;/div&gt;
+		</code></pre>
+							</div>
+						  </div>
+						  <div id="tabs-overview" class="tab-content" style="width:590px">
+							<div class="inner">In order to create tab-blocks (tabs) you need:
+							  <ol>
+								  <li>Create a block with <strong>tabs</strong> class (<strong>class="tabs"</strong>).
+								  <pre><code>&lt;div class="tabs"&gt; &lt;/div&gt;</code></pre>
+								</li>
+								  <li>Created a bulleted list with <strong>nav</strong> class inside this block(<strong>&lt;ul class="nav"&gt;</strong>).</li>
+								  <li>Each list item would represent a tab:
+								  <pre><code>&lt;li&gt;&lt;a href="#tab1"&gt;...&lt;/a&gt;&lt;/li&gt;</code></pre>
+								  The <strong>href</strong> attribute contains the reference to the content block (This will be the tab content).</li>
+								  <li>Add <strong>selected</strong> class to the first list item.</li>
+								  <li>Then you will need to create a set of <strong>&lt;div&gt;</strong> tags with <strong>tab-content</strong> class (<strong>class="tab-content"</strong>), that represent tabs content. In order to add paddings to the content you will need to use <strong>&lt;div&gt;</strong> with <strong>inner</strong> class.
+								  <pre><code>&lt;div id="tab1" class="tab-content"&gt;
+				&lt;div class="inner"&gt;
+				  &lt!-- insert content here --&gt;
+				&lt;/div&gt;
+			  &lt;/div&gt;
+			  </code></pre>
+								  Make sure to specify unique id for every tab(<strong>id="tab#"</strong>) </li>
+								</ol>
+							</div>
+						  </div>
+						 </div>
+					  </div>
+					  <div class="grid_8"><h2>Accordion</h2>
+						<dl id="accordion"> 
+							<dt><a href="#">Automation &amp; Electronics</a></dt> 
+							<dd> 
+							  <div class="indent"> 
+								<ul class="list_1"> 
+								  <li><a href="#">Accelerators</a></li> 
+								  <li><a href="#">Access Control Systems</a></li> 
+								  <li><a href="#">Automation Equipment</a></li> 
+								  <li><a href="#">Automation Systems</a></li> 
+								  <li><a href="#">Bar Code Equipment</a></li> 
+								  <li><a href="#">Chambers &amp; Enclosures</a></li> 
+								  <li><a href="#">Cleanroom Equipment</a></li> 
+								  <li><a href="#">Cleanrooms</a></li> 
+								  <li><a href="#">Computer Chassis</a></li> 
+								  <li><a href="#">Computer Components</a></li> 
+								  <li><a href="#">Computer Drives</a></li> 
+								  <li><a href="#">Computer Memories</a></li> 
+								</ul> 
+							  </div> 
+							</dd> 
+							<dt><a href="#">Chemicals</a></dt> 
+							<dd> 
+							  <div class="indent"> 
+								<ul class="list_1"> 
+								  <li><a href="#">Lorem ipsum</a></li> 
+								  <li><a href="#">Dolor sit amet</a></li> 
+								  <li><a href="#">Praesent vestibulum</a></li> 
+								  <li><a href="#">Products and Solutions</a></li> 
+								  <li><a href="#">Indusrial Plastic</a></li> 
+								  <li><a href="#">Filtration</a></li> 
+								</ul> 
+							  </div> 
+							</dd> 
+							<dt><a href="#">Power Generation</a></dt> 
+							<dd> 
+							  <div class="indent"> 
+								<ul class="list_1"> 
+								  <li><a href="#">Accelerators</a></li> 
+								  <li><a href="#">Cleanrooms</a></li> 
+								  <li><a href="#">Computer Chassis</a></li> 
+								  <li><a href="#">Computer Components</a></li> 
+								  <li><a href="#">Computer Drives</a></li> 
+								  <li><a href="#">Computer Memories</a></li> 
+								</ul> 
+							  </div> 
+							</dd> 
+							<dt><a href="#">Automation &amp; Electronics</a></dt> 
+							<dd> 
+							  <div class="indent"> 
+								<ul class="list_1"> 
+								  <li><a href="#">Filtration</a></li> 
+								  <li><a href="#">Praesent vestibulum</a></li> 
+								  <li><a href="#">Products and Solutions</a></li> 
+								  <li><a href="#">Lorem ipsum</a></li> 
+								  <li><a href="#">Dolor sit amet</a></li> 
+								  <li><a href="#">Accelerators</a></li> 
+								  <li><a href="#">Cleanrooms</a></li> 
+								</ul> 
+							  </div> 
+							</dd> 
+							<dt><a href="#">Instruments &amp; Controls</a></dt> 
+							<dd> 
+							  <div class="indent"> 
+								<ul class="list_1"> 
+								  <li><a href="#">Lorem ipsum</a></li> 
+								  <li><a href="#">Dolor sit amet</a></li> 
+								  <li><a href="#">Accelerators</a></li> 
+								  <li><a href="#">Cleanrooms</a></li> 
+								  <li><a href="#">Praesent vestibulum</a></li> 
+								  <li><a href="#">Products and Solutions</a></li> 
+								  <li><a href="#">Indusrial Plastic</a></li> 
+								  <li><a href="#">Filtration</a></li> 
+								</ul> 
+							  </div> 
+							</dd> 
+							<dt><a href="#">Metals &amp; Metal Products</a></dt> 
+							<dd> 
+							  <div class="indent"> 
+								<ul class="list_1"> 
+								  <li><a href="#">Products and Solutions</a></li> 
+								  <li><a href="#">Lorem ipsum</a></li> 
+								  <li><a href="#">Dolor sit amet</a></li> 
+								  <li><a href="#">Accelerators</a></li> 
+								  <li><a href="#">Cleanrooms</a></li> 
+								  <li><a href="#">Computer Chassis</a></li> 
+								  <li><a href="#">Lorem ipsum</a></li> 
+								  <li><a href="#">Dolor sit amet</a></li> 
+								 </ul> 
+							  </div> 
+							</dd> 
+						  </dl></div>
+						  <div class="wrapper">
+							<div class="tabs">
+							  <ul class="nav">
+								<li class="selected"><a href="#accordion-code">Code</a></li>
+								<li><a href="#accordion-overview">How it works</a></li>
+							  </ul>
+							  <div id="accordion-code" class="tab-content" style="width:590px;">
+								<div class="inner">
+		<pre><code>&lt;dl id="accordion"&gt; 
+		&lt;dt&gt;&lt;a href="#"&gt;Automation &amp; Electronics&lt;/a&gt;&lt;/dt&gt; 
+		&lt;dd&gt; 
+		&lt;div class="indent"&gt; 
+		&lt;ul class="sub_menu"&gt; 
+		&lt;li&gt;&lt;a href="#"&gt;Accelerators&lt;/a&gt;&lt;/li&gt; 
+		&lt;li&gt;&lt;a href="#"&gt;Access Control Systems&lt;/a&gt;&lt;/li&gt; 
+		....
+		&lt;/ul&gt; 
+		&lt;/div&gt; 
+		&lt;/dd&gt; 
+		&lt;dt&gt;&lt;a href="#"&gt;Chemicals&lt;/a&gt;&lt;/dt&gt; 
+		&lt;dd&gt; 
+		&lt;div class="indent"&gt; 
+		&lt;ul class="sub_menu"&gt; 
+		&lt;li&gt;&lt;a href="#"&gt;Lorem ipsum&lt;/a&gt;&lt;/li&gt; 
+		&lt;li&gt;&lt;a href="#"&gt;Dolor sit amet&lt;/a&gt;&lt;/li&gt; 
+		&lt;li&gt;&lt;a href="#"&gt;Praesent vestibulum&lt;/a&gt;&lt;/li&gt; 
+		
+		...
+		&lt;/ul&gt; 
+		&lt;/div&gt; 
+		&lt;/dd&gt; 
+		&lt;/dl&gt;
+		</code></pre>
+								</div>
+							  </div>
+							  <div id="accordion-overview" class="tab-content">
+								<div class="inner">
+								  In order to create an accordion you just need to add this HTML coding and add <strong>#accordion</strong> id <strong>dl</strong> tag (<strong>id="accordion"</strong>).
+								</div>
+							  </div>
+							</div>
+						  </div>
+						  <span class="hr"><a href="#">top</a></span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="container_24">
+			<div class="wrapper">
+				<div class="grid_16">
+					<div class="free"><strong>Free Call:</strong> 1-800 123 45 67</div>
+					<div class="policy">Progress.Co  &copy; 2010&nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp;<a href="index-6.html">Privacy Policy</a></div>
+				</div>
+				<div class="grid_8">
+					<h4>Connect With Us</h4>
+					<div class="social">
+						<a href="#" class="normaltip" title="Facebook"><img src="images/facebook.jpg" alt="" /></a><a href="#" class="normaltip" title="Flickr"><img src="images/flickr.jpg" alt="" /></a><a href="#" class="normaltip" title="Twitter"><img src="images/twitter.jpg" alt="" /></a><a href="#" class="normaltip" title="Rss"><img src="images/rss.jpg" alt="" /></a><a href="#" class="normaltip" title="Technorati"><img src="images/technorati.jpg" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+  <!-- trigger -->
+  <div id="advanced">
+  	<span class="trigger"></span>
+  	<ul>
+      <li class="trigger_adv"><span>Pages</span>
+        <ul>
+          <li><a href="under_construction.html">Under construction</a></li>
+          <li><a href="intro.html">intro page</a></li>
+          <li><a href="404.html">404 page</a></li>
+        </ul>
+      </li>
+      <li><a href="layouts.html">Layouts</a>
+      <li><a href="typography.html">Typography</a></li>	
+      <li class="trigger_adv"><span>Interactive</span>
+        <ul>
+          <li><a href="coin-slider.html">slider</a>
+            <ul>
+              <li><a href="coin-slider.html">coin slider</a></li>
+              <li><a href="kwicks.html">kwicks slider</a></li>
+            </ul>
+          </li>
+          <li><a href="functional-slider.html">functional slider</a></li>
+          <li><a href="gallery-page1.html">simple gallery</a></li>
+          <li><a href="gallery-page2.html">advanced gallery</a></li>
+          <li><a href="misc.html" class="current">misc</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- panel begin -->
+  <script type="text/javascript">
+		$(function(){
+			$("#advanced .trigger").toggle(function(){
+				$(this).parent().animate({right:0}, "medium")
+			}, function(){
+				$(this).parent().animate({right:-172}, "medium")
+			});
+		});
+  </script>
+  <!-- panel end -->
+  <script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
+
+

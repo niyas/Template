@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Under construction</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Your description">
+  <meta name="keywords" content="Your keywords">
+  <meta name="author" content="Your name">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/grid.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  
+  <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/Lucida_Bright_400.font.js"></script>
+  <script type="text/javascript" src="js/cufon-replace.js"></script>
+  <script type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+  <script type="text/javascript">
+  	Cufon.replace('h1', { fontFamily: 'Grandesign Neue Roman', textShadow: '1px 1px rgba(0, 0, 0, .5)'});
+  </script>
+  <script type="text/javascript">
+		jQuery(document).ready(function() {
+			$('#countdown_dashboard').countDown({
+				targetDate: {
+					'day': 		10,
+					'month': 	1,
+					'year': 	2020,
+					'hour': 	11,
+					'min': 		0,
+					'sec': 		0
+				}
+			});
+		});
+	</script>
+  <!--[if IE 7]>
+  	<link rel="stylesheet" href="css/ie/ie7.css" type="text/css" media="screen">
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="constuction-box">
+  	<div class="inside">
+    	<h1><em>Under</em> <strong>construction</strong></h1>
+      
+      <!-- Countdown dashboard start -->
+      <div id="countdown_dashboard">
+        <div class="dash weeks_dash">
+          <span class="dash_title">weeks</span>
+          <div class="digit">0</div>
+          <div class="digit">0</div>
+        </div>
+  
+        <div class="dash days_dash">
+          <span class="dash_title">days</span>
+          <div class="digit">0</div>
+          <div class="digit">0</div>
+        </div>
+  
+        <div class="dash hours_dash">
+          <span class="dash_title">hours</span>
+          <div class="digit">0</div>
+          <div class="digit">0</div>
+        </div>
+  
+        <div class="dash minutes_dash">
+          <span class="dash_title">minutes</span>
+          <div class="digit">0</div>
+          <div class="digit">0</div>
+        </div>
+  
+        <div class="dash seconds_dash">
+          <span class="dash_title">seconds</span>
+          <div class="digit">0</div>
+          <div class="digit">0</div>
+        </div>
+  
+      </div>
+      <!-- Countdown dashboard end -->
+      
+      <p>Enter your email address and we’ll let you know as soon as it’s ready.</p>
+      <form action="" id="newsletter-alt-form">
+        <fieldset>
+        	<input type="text" value="Your email address:" onFocus="if(this.value=='Your email address:'){this.value=''}" onBlur="if(this.value==''){this.value='Your email address:'}"><input type="submit" value="Submit">
+        </fieldset>
+      </form>
+      
+    </div>
+  </div>
+  <!-- trigger -->
+  <div id="advanced">
+  	<span class="trigger"></span>
+  	<ul>
+      <li class="trigger_adv"><span>Pages</span>
+        <ul>
+          <li><a href="under_construction.html">Under construction</a></li>
+          <li><a href="intro.html">intro page</a></li>
+          <li><a href="404.html">404 page</a></li>
+        </ul>
+      </li>
+      <li><a href="layouts.html">Layouts</a>
+      <li><a href="typography.html">Typography</a></li>	
+      <li class="trigger_adv"><span>Interactive</span>
+        <ul>
+          <li><a href="coin-slider.html">slider</a>
+            <ul>
+              <li><a href="coin-slider.html">coin slider</a></li>
+              <li><a href="kwicks.html">kwicks slider</a></li>
+            </ul>
+          </li>
+          <li><a href="functional-slider.html">functional slider</a></li>
+          <li><a href="gallery-page1.html">simple gallery</a></li>
+          <li><a href="gallery-page2.html">advanced gallery</a></li>
+          <li><a href="misc.html" class="current">misc</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- panel begin -->
+  <script type="text/javascript">
+		$(function(){
+			$("#advanced .trigger").toggle(function(){
+				$(this).parent().animate({right:0}, "medium")
+			}, function(){
+				$(this).parent().animate({right:-172}, "medium")
+			});
+		});
+  </script>
+  <!-- panel end -->
+  <script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
